@@ -48,8 +48,9 @@ browser, browser.display.background_color, tabbrowser tabpanels {
 }
 
 .tab-icon-image {
-	opacity: 0.8 !important;
-	filter: grayscale(100%) contrast(25%) !important;
+	/*opacity: 0.8 !important;*/
+	/*filter: grayscale(100%) contrast(25%) !important;*/
+        display: none;
 }
 
 #downloads-button, #new-tab-button, #ctraddon_bookmarks-button, #ctraddon_reload-button, bookmarks-button, reload-button {
