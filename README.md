@@ -1,3 +1,0 @@
-# firefucks
-fuckfofkf
- :airplane: :office:
