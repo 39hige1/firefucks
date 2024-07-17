@@ -1,1 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #3d3d3d;
+	/*background-image: url(img/bg.jpg);*/
+	background-size: 100%
+	background-repeat: repeat;
+	margin-top: 0px;
+}
+a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:active {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#head {
+	width:593px;
+	height:108px;
+	margin:0px auto;
+	background:url(img/search_bg.png) no-repeat;
+}
+#home {
+	height:198px;
+	margin:0px auto;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+#date {
+	width:200px;
+	height:50px;
+	margin:0px auto;
+	padding-top:10px;
+	text-align:center;
+	font-family:"Vrinda";
+	text-transform:uppercase;
+	font-size:28px;
+	color:#FFFFFF;
+}
+#month {
+	font-size:18px;
+	color:#FFFFFF;
+	text-align:center;
+	text-transform:uppercase;
+}
+#navcontainer
+{
+width: 150px;
+padding:0px;
+margin:0px auto;
+color: #3d3d3d;
+}
+
+#navcontainer ul
+{
+list-style: none;
+margin: 0;
+padding: 0;
+border: none;
+}
+
+#navcontainer li
+{
+margin-bottom:8px;
+}
+
+#navcontainer li a
+{
+display: block;
+padding: 5px 5px 5px 0.5em;
+background-color: #3d3d3d;
+color: #FFFFFF;
+text-decoration: none;
+text-align:center;
+text-transform:uppercase;
+width: 100%;
+}
+
+html>body #navcontainer li a { width: auto; }
+
+#navcontainer li a:hover
+{
+background-color: #3d3d3d;
+color: #FFFFFF;
+}
+.search {
+	padding-left:160px;
+	padding-top:37px;
+	width:290px;
+	height:20px;
+}
+.bar {
+	color:#FFFFFF;
+	width:290px;
+	height:20px;
+	background:#3d3d3d;
+	border:0px;
+}
+-->
+</style></head>
+
+<body onload="startTime()">
+<div id="head">
+<div class="search">
+<form method="get" action="http://www.google.com/search"><input class="bar" name="q" type="text" maxlength="255" value="" title="Google">
+</form>
+</div>
+</div>
+<div id="date"><script language="Javascript">
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('date').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+ </script>
+</div>
+<center>
+<div id="home"><img src="img/kim.png" height="198" style="border: 10px solid #939392;" /></div>
+</center>
+<br>
+<div id="navcontainer">
+<ul id="navlist">
+<li id="active"><a href="https://4chan.org/">/4chan/</a></li>
+<li><a href="https://youtube.com/">/YouTube/</a></li>
+<li><a href="https://pornhub.com/">/Facebook/</a></li>
+<li><a href="https://initiate.space">/INITIATE/</a></li>
+<li><a href="https://www.gmail.com/">/Gmail/</a></li>
+</ul>
+</div>
+</body>
+</html>
 jude
